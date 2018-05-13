@@ -93,6 +93,10 @@ Elasticsearch and Kibana are running in a docker container. Kibana can be access
 
 `docker run -d -p 9200:9200 -p 9300:9300 -it -h elasticsearch --name elasticsearch elasticsearch`
 
+Force Kibana to look for the newest documents:
+
+`curl -XDELETE 'http://localhost:9200/filebeat-*'`
+
 The `/etc/filebeat/filebeat.yml` config file is as follows:
 ```
 filebeat.prospectors:
