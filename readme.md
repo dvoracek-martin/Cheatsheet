@@ -1,9 +1,10 @@
 # GitHub
 Projects meant to be part of the java-project can be found on GitHub under these URLs:
 
-`https://github.com/dvoracek-martin/java-project-gateway`
+[https://github.com/dvoracek-martin/java-project-gateway](https://github.com/dvoracek-martin/java-project-gateway)
 
-`https://github.com/dvoracek-martin/time-provider`
+[https://github.com/dvoracek-martin/time-provider](https://github.com/dvoracek-martin/time-provider)
+
 
 # java-project-gateway
 A gateway and a load balancer. Is listening on `port 80`
