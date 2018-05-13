@@ -2,6 +2,7 @@
 Projects meant to be part of the java-project can be found on GitHub under these URLs:
 
 `https://github.com/dvoracek-martin/java-project-gateway`
+
 `https://github.com/dvoracek-martin/time-provider`
 
 # java-project-gateway
@@ -32,7 +33,7 @@ apiVersion: apps/v1
                                     - containerPort: 80
 ```
 
-###Useful commands
+### Useful commands
 
 
 Expose java-project-gateway to be accessible outside of the cluster:
@@ -85,7 +86,7 @@ In this case it's not a real ELK stack, because Logstash was slowing down the pe
 by Filebeat are shipped directly to the Elasticsearch. Filebeat is for easier configuration running as a service, whereas 
 Elasticsearch and Kibana are running in a docker container. Kibana can be accessed at URL [java-project.com:5601](http://java-project.com:8080 ).
 
-###Useful commands
+### Useful commands
 `service filebeat start`
 
 `docker run -d -p 9200:9200 -p 9300:9300 -it -h elasticsearch --name elasticsearch elasticsearch`
