@@ -46,7 +46,7 @@ Autoscale java-project-gateway to run in at least 2 and max 5 pods, depending on
 `kubectl hpa deployment java-project-gateway --min=2 --max=5 --cpu-percent=50`
 
 # time-provider
-Service for showing the exact time. Internally is listening on the `port 90`. Though it's not accessible directly from the internet and has to be accessed through the gateway only, under the URL:[http://java-project.com/api/time/v1](http://java-project.com/api/time/v1 )
+Service for showing the exact time. Internally is listening on the `port 90`. Though it's not accessible directly from the internet and has to be accessed through the gateway only, under the URL: [http://java-project.com/api/time/v1](http://java-project.com/api/time/v1 )
 ### deployment.yml
 
 ```
@@ -92,7 +92,7 @@ Elasticsearch and Kibana are running in a docker container. Kibana can be access
 
 `docker run -d -p 9200:9200 -p 9300:9300 -it -h elasticsearch --name elasticsearch elasticsearch`
 
-`docker run -d -p 9200:9200 -p 9300:9300 -it -h elasticsearch --name elasticsearch elasticsearch`
+`docker run -d  -p 5601:5601 -h kibana --name kibana --link elasticsearch:elasticsearch kibana`
 
 Force Kibana to look for the newest documents:
 
