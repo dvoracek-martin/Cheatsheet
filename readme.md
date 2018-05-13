@@ -13,25 +13,25 @@ A gateway and a load balancer. Is listening on `port 80`
 
 ```
 apiVersion: apps/v1
-                            kind: Deployment
-                            metadata:
-                              name: java-project-gateway
-                            spec:
-                              selector:
-                                matchLabels:
-                                  run: java-project-gateway
-                              replicas: 1
-                              template:
-                                metadata:
-                                  labels:
-                                    run: java-project-gateway
-                                spec:
-                                  containers:
-                                  - name: java-project-gateway
-                                    image: dworza/java-project-gateway:latest
-                                    imagePullPolicy: "Always"
-                                    ports:
-                                    - containerPort: 80
+kind: Deployment
+metadata:
+  name: java-project-gateway
+spec:
+  selector:
+    matchLabels:
+      run: java-project-gateway
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: java-project-gateway
+    spec:
+      containers:
+      - name: java-project-gateway
+        image: dworza/java-project-gateway:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 80 
 ```
 
 ### Useful commands
