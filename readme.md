@@ -1,10 +1,10 @@
-##GitHub
+# GitHub
 Projects meant to be part of the java-project can be found on GitHub under these URLs:
 
 `https://github.com/dvoracek-martin/java-project-gateway`
 `https://github.com/dvoracek-martin/time-provider`
 
-#java-project-gateway
+# java-project-gateway
 A gateway and a load balancer. Is listening on `port 80`
 
 ### deployment.yml
@@ -43,7 +43,7 @@ Autoscale java-project-gateway to run in at least 2 and max 5 pods, depending on
  
 `kubectl hpa deployment java-project-gateway --min=2 --max=5 --cpu-percent=50`
 
-##time-provider
+# time-provider
 Service for showing the exact time. Internally is listening on the `port 90`. Though it's not accessible directly from the internet and has to be accessed through the gateway only, under the URL:[http://java-project.com/api/time/v1](http://java-project.com/api/time/v1 )
 ### deployment.yml
 
@@ -79,7 +79,7 @@ spec:
 
 ```
 
-##ELK STACK
+# ELK STACK
 
 In this case it's not a real ELK stack, because Logstash was slowing down the performance way too much. Because of this the data harvested 
 by Filebeat are shipped directly to the Elasticsearch. Filebeat is for easier configuration running as a service, whereas 
@@ -117,7 +117,7 @@ output.elasticsearch:
 
 ```
 
-##Jenkins 
+# Jenkins 
 Jenkins is running as a service as well and is accessible on URL [java-project.com:8080](http://java-project.com:8080 ).
 Whenever a branch of any of the main projects is merged to the master branch, the jenkins pipeline will build the project,
 push a new docker image to the given repository in [https://hub.docker.com/r/dworza](https://hub.docker.com/r/dworza ) and 
