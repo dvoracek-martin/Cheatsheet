@@ -139,3 +139,7 @@ ADD target/gateway.jar gateway.jar
 ENTRYPOINT ["java", "-jar", "/gateway.jar"]
 EXPOSE 80
 ``` 
+
+# Ideas
+- use Helm
+- use Sonar
