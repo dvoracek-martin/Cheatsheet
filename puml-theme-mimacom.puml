@@ -39,9 +39,3 @@ skinparam {
 	UsecaseBackgroundColor		#WHITE
 	CloudBackgroundColor		#WHITE
 }
-
-!startsub rectangle
-skinparam rectangle {
-	BorderThickness 2
-}
-!endsub
