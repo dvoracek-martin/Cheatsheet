@@ -1,0 +1,47 @@
+!$THEME = "mimacom"
+
+!if %not(%variable_exists("$BGCOLOR"))
+!$BGCOLOR = "transparent"
+!endif
+
+
+!$MIMACOM_MAGENTA = "#B30037"
+!$MIMACOM_LIGHT_BLUE = "#D7E2E6"
+!$MIMACOM_GREY_BLUE = "#7E9098"
+!$MIMACOM_WHITE = "#F2F2F2"
+!$MIMACOM_CYAN = "#64C1C7"
+!$MIMACOM_PINK = "#FF004E"
+!$WHITE = "#fff"
+!$BLACK = "#black"
+
+skinparam {
+	backgroundColor 			$BGCOLOR
+	useBetaStyle 				false
+	defaultFontName				"Verdana"
+	defaultFontSize				12
+	dpi							100
+	shadowing					false
+	roundcorner					0
+	ParticipantPadding			30
+	BoxPadding					40
+	Padding						8
+	ActorBackgroundColor		$WHITE
+	ArrowColor					$MIMACOM_MAGENTA
+	AgentBorderColor			$BLACK
+	AgentBackgroundColor		$WHITE
+	ComponentBorderColor		$BLACK
+	ComponentBackgroundColor	$MIMACOM_LIGHT_BLUE
+	InterfaceBackgroundColor	$WHITE
+	ParticipantBorderColor		$BLACK
+	ParticipantBackgroundColor	$MIMACOM_GREY_BLUE
+	ArtifactBackgroundColor		$MIMACOM_LIGHT_BLUE
+	UsecaseBorderColor			$BLACK
+	UsecaseBackgroundColor		#WHITE
+	CloudBackgroundColor		#WHITE
+}
+
+!startsub rectangle
+skinparam rectangle {
+	BorderThickness 2
+}
+!endsub
